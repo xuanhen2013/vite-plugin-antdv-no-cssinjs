@@ -47,6 +47,7 @@
     "build": "cross-env vite build",
     "dev": "vite build --watch"
   },
+  "packageManager": "pnpm@9",
   "peerDependencies": {
     "ant-design-vue": "^4.0.0",
     "vue": "^3.0.0"

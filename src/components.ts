@@ -26,7 +26,7 @@ const compChildNameMap = {
 
 export function getAntdNode(antdComponents: string[]) {
   return antdComponents.map((compName) => {
-    const Comp = antd[compName]
+    const Comp = (antd as any)[compName]
     if (compName === 'Dropdown') {
       return (
         h(Comp, { key: compName, menu: { items: [] } }, {
@@ -35,12 +35,12 @@ export function getAntdNode(antdComponents: string[]) {
       )
     }
     if (compName in pickerMap) {
-      const Comp = antd.DatePicker
-      const type = pickerMap[compName]
+      const Comp = (antd as any).DatePicker
+      const type = pickerMap[compName as keyof typeof pickerMap]
       return h(Comp, { key: compName, picker: type })
     }
     if (compName in compChildNameMap) {
-      const ParentComp = antd[compChildNameMap[compName]]
+      const ParentComp = (antd as any)[compChildNameMap[compName as keyof typeof compChildNameMap]]
       return (
         h(ParentComp, {
           default: () => h(Comp),
