@@ -2,7 +2,7 @@
   "name": "vite-plugin-antdv-no-cssinjs",
   "version": "1.0.0",
   "description": "close antdv css-in-js and generate css file",
-  "author": "leizongjie <leizongjie@changzhi.top>",
+  "author": "leizongjie",
   "license": "MIT",
   "type": "module",
   "keywords": [
@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs.git"
+    "url": "https://github.com/xuanhen2013/vite-plugin-antdv-no-cssinjs.git"
   },
-  "homepage": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs#readme",
+  "homepage": "https://github.com/xuanhen2013/vite-plugin-antdv-no-cssinjs#readme",
   "bugs": {
-    "url": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs/issues"
+    "url": "https://github.com/xuanhen2013/vite-plugin-antdv-no-cssinjs/issues"
   },
   "main": "lib/index.js",
   "module": "esm/index.js",
