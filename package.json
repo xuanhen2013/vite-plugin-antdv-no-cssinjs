@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-antdv-no-cssinjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "close antdv css-in-js and generate css file",
   "author": "leizongjie",
   "license": "MIT",
