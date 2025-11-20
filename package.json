@@ -1,0 +1,63 @@
+{
+  "name": "vite-plugin-antdv-no-cssinjs",
+  "version": "1.0.0",
+  "description": "close antdv css-in-js and generate css file",
+  "author": "leizongjie <leizongjie@changzhi.top>",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "ant-design-vue",
+    "antdv",
+    "css-in-js",
+    "css",
+    "vue",
+    "vue3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs.git"
+  },
+  "homepage": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs#readme",
+  "bugs": {
+    "url": "https://github.com/leizongjie/vite-plugin-antdv-no-cssinjs/issues"
+  },
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": [
+    "esm/*.js",
+    "lib/*.js",
+    "src/*.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./esm/index.js",
+      "require": "./lib/index.js"
+    }
+  },
+  "files": [
+    "esm",
+    "lib",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "cross-env vite build",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "^4.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.8.3",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-externalize-deps": "^0.9.0",
+    "vue-types": "6.0.0"
+  }
+}
